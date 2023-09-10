@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
 
 html {
-    cursor: url(img/rede.svg) 30 30, auto;
+    cursor: url(img/rede.svg) 10 10, auto;
 }
 
 * {
