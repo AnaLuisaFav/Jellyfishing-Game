@@ -18,7 +18,7 @@ https://github.com/AnaLuisaFav/Jellyfishing-Game/assets/125583157/35dccd62-006a-
 <br>
 
 <p align="center">
-  <a href="https://analuisafav.github.io/Jellyfishing-Game/" target="_blank"><strong>View</strong></a>
+  <a href="https://analuisafav.github.io/Jellyfishing-Game/" target="_blank"><strong>Click here to play</strong></a>
   <br>
 
 </div>
