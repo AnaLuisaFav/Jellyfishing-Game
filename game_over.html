@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jellyfishing - Game Over!</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/jellyfish-icon1.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            background-image: url(img/game-over-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+    
+        button {
+            font-size: 0.9em;
+            background-color: #fb7a7a;
+            border: #fb7a7a;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 15px;
+            position: fixed;
+            width: 135px;
+            bottom: 65px;
+        }
+
+        button.try-again {
+            font-size: 0.9em;
+            background-color: #fb7a7a;
+            border: #fb7a7a;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 15px;
+            position: fixed;
+            width: 135px;
+            bottom: 110px;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: #000000;
+            border: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="try-again" onclick="retryGame()">Tentar novamente</button>
+        <button onclick="window.location.href = 'index.html'">Voltar</button>
+    </div>
+    
+    <script>
+       function retryGame() {
+             // Recupere o nível da URL
+            var nivel = window.location.search
+            nivel = (nivel.replace('?', ''))
+
+            console.log(nivel)
+
+            // Redirecione para a página de jogo com o nível
+            if (nivel) {
+                window.location.href = 'jogo.html?' + nivel
+            } else {
+                window.location.href = 'jogo.html' // Redirecione sem um nível especificado
+            }
+
+            console.log(retryGame)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jellyfishing</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/jellyfish-icon1.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="init.js"></script>
+
+	<style>
+		body {
+		background-image: url(img/jogo.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.painel {
+		position: absolute;
+		width: 180px;
+		left: 0px;
+		padding: 10px;
+		margin: 5px;
+		bottom: 0px;
+		border-top: solid 1px #fff;
+		border-radius: 10px;
+		background-color: #fff;
+		opacity: 0.7;
+	}
+
+	.vidas {
+		float: left;
+	}
+
+	.vidas img {
+		width: 50px;
+	}
+
+	.cronometro {
+		float: left;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.jellyfish-1 {
+		width: 100px;
+	}
+
+	.jellyfish-2 {
+		width: 130px;
+	}
+
+	.jellyfish-3 {
+		width: 50px;
+	}
+
+	.ladoA {
+		transform: scaleX(1);
+	}
+
+	.ladoB {
+		transform: scaleX(-1);
+	}
+	</style>
+	
+</head>
+<body>
+
+	<body onresize="ajustaTamanho()">
+
+		<div class="painel">
+			<div class="vidas">
+				<img id="c1" src="img/red-heart1.png">
+				<img id="c2" src="img/red-heart1.png">
+				<img id="c3" src="img/red-heart1.png">
+			</div>
+			<div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+		</div>
+	
+		<script>
+	
+			document.getElementById('cronometro').innerHTML = tempo 
+
+		var criaAgua = setInterval(function() {
+			posicaoRandomica()
+		}, criaAguaTempo)
+
+	
+		</script>
+	
+</body>
+</html>

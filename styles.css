@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+html {
+    cursor: url(img/rede.svg) 30 30, auto;
+}
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}

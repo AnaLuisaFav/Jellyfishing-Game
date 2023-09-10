@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jellyfishing Game</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/jellyfish-icon1.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script>
+        function iniciarJogo() {
+            var nivel = document.getElementById('nivel').value
+
+            if(nivel === '') {
+                alert('Selecione um nível para iniciar o jogo!')
+                return false
+            }
+
+            window.location.href = "jogo.html?" + nivel
+        }
+    </script>
+
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-image: url(img/index.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        button {
+            font-size: 0.9em;
+            background-color: #fb7a7a;
+            border: #fb7a7a;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 15px;
+            position: fixed;
+            width: 135px;
+            bottom: 120px;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: #000000;
+            border: #000000;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 10px;
+            position: absolute;
+            bottom: 175px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+            <select class="form-control" id="nivel">
+                <option value="">-- Selecione o nível --</option>
+                <option value="normal">Normal</option>
+                <option value="dificil">Difícil</option>
+                <option value="chucknorris">Chuck Norris</option>
+            </select>
+       <button onclick="iniciarJogo()">Iniciar</button>
+    </div>
+    
+</body>
+</html>
